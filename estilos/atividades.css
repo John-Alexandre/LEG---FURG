@@ -47,7 +47,7 @@ header > img#img{
 header > nav{
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
     order: 1;
     
 
@@ -60,7 +60,7 @@ header > nav{
 nav#itens ul{
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 5px;
 }
 
 
@@ -78,20 +78,88 @@ main{
    margin-top: 20px;
 }
 
-article#conteudo-container{
+section#conteudo-container{
     display: flex;
     flex-direction: column-reverse;
+    
     
 }
 
 
 div.container{
+    display: block;
+    margin: auto;
     background-color: var(--cor-terciaria);
     text-align: center;
-   
+    width: 70vw;
+    align-items: center;
+   border-radius: 15px;
+   box-shadow: 5px 5px 10px black;
 }
+
+
+div.container a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    
+}
+
 
 article{
     padding: 10px;
     margin: 10px;
+}
+
+
+section#registro-container{
+    display: grid;
+    grid-template-columns: auto 90vw auto;
+    background-color: var(--cor-terciaria);
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+article#registro-conteudo{
+    grid-column: 2/ 3;
+    
+}
+
+article#registro-conteudo h1, h2{
+    font-family: "Oregano", cursive;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+article#registro-conteudo p{
+    text-indent: 10px;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+
+article#registro-conteudo img{
+    margin-top: 15px;
+    width: 80vw;
+    border-radius: 5px;
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: var(--cor-texto);
+    color: var(--cor-terciaria);
+    font-family: "Oregano", cursive;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 18px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor-primaria);
 }
