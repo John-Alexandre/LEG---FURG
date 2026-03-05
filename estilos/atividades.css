@@ -119,13 +119,17 @@ section#registro-container{
     margin: auto;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 15px;
     
 }
 
 article#registro-conteudo{
     grid-column: 2/ 3;
     
+    
 }
+
+
 
 article#registro-conteudo h1, h2{
     font-family: "Oregano", cursive;
@@ -146,6 +150,29 @@ article#registro-conteudo img{
     width: 80vw;
     border-radius: 5px;
 }
+
+article#registro-conteudo > div > a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--cor-texto);
+    background-color: var(--cor-primaria);
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    margin-top: 10px;
+    margin-bottom: 18px;
+    
+}
+
+article#registro-conteudo iframe{
+    width: 80vw;
+    height: 500px;
+}
+
+
 
 
 

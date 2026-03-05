@@ -150,20 +150,7 @@ section.conteudo h1{
 }   
 
 
-section.conteudo > div > a{
-    display: block;
-    margin: auto;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    color: var(--cor-texto);
-    background-color: var(--cor-primaria);
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
-    margin-top: 10px;
-    
-}
+
 
 section#conteudo2 > div > a:hover{
     background-color: var(--cor-secundaria);
