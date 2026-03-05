@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #F2CB57;
+    --cor-secundaria: #8C1F1F;
+    --cor-terciaria: #F2F2F2;
+    --cor-fundo: #C4AEF2;
+    --cor-texto: #212529;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+
+header{
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: space-between;
+    
+
+    position: sticky;
+      top: 0;
+      z-index: 0;
+    
+}
+
+header > img#img{
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+    
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    
+}
+
+header > nav{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    order: 1;
+    
+
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+nav#itens ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+
+nav#itens a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 15px;
+  
+
+  transition: background-color 0.5s ;
+}
+
+
+
+div#imagem-principal{
+    background-image: url(../imagens/idoso-lendo.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px ;
+    margin-bottom: 20px;
+    
+    
+}
+div#imagem-principal > h1{
+    color: var(--cor-terciaria);
+    font-size: 3em;
+    padding: 20px;
+    font-family: "Oregano", cursive;
+    
+    display: inline-block;
+    margin-top: 10vh;
+}
+
+div#imagem-principal > p{
+    color: var(--cor-terciaria);
+    font-size: 1.5em;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+section.conteudo{
+    background-color: var(--cor-terciaria);
+    width: 90vw;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+section.conteudo h2{
+    font-family: "Oregano", cursive;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}  
+
+section.conteudo h3{
+    font-family: "Oregano", cursive;
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}
+
+section.conteudo p{
+    text-indent: 10px;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+
+section.conteudo h1{
+    font-family: "Oregano", cursive;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}   
+
+
+section.conteudo > div > a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--cor-texto);
+    background-color: var(--cor-primaria);
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    margin-top: 10px;
+    
+}
+
+section#conteudo2 > div > a:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    transition: 0.3s;
+}
+
+#container{
+    display: flex;
+    
+}
+
+div.imagens-conteudo img{
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+}
