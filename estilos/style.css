@@ -71,13 +71,10 @@ nav#itens ul{
 
 nav#itens a {
   text-decoration: none;
-  color: var(--cor-texto);
+  color: var(--cor-terciaria);
   font-weight: 600;
   padding: 12px 15px;
   border-radius: 15px;
-  
-
-  transition: background-color 0.5s ;
 }
 
 
@@ -184,4 +181,30 @@ div.imagens-conteudo img{
     height: 300px;
     aspect-ratio: 16/9;
     border-radius: 8px;
+    margin-top: 10px;
+}
+
+details > summary, p{
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cor-texto);
+    color: var(--cor-terciaria);
+    font-family: "Oregano", cursive;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+
+@media screen and (min-width: 768px) {
+   section.conteudo{
+    width: 700px;
+   }
 }
